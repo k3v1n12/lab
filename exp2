@@ -1,0 +1,30 @@
+Redirection
+command > filename (Redirects output to file and overwrites previous content)
+command >> file name ( Redirects ouput to end of file)
+sort < filename (Sorts content inside file )
+Pipes
+Redirects Output of Command Before Pipe as input to Command After Pipe
+command1 | command 2 | command 3
+Filter
+sort Sorts the contents of the File
+uniq Removes Duplicates from the file
+grep Examines each line of the file and outputs every line of the file containing the input string to the standard output
+fmt Formats the contents of the file and outputs it to the standard output
+pr Displays the contents of the file one page after the other and returns the output to the standard output
+head Displays the first ten lines of the file
+tail Displays the last ten lines of the file
+tr Takes input from the keyboard and outputs each character of the input to uppercase characters and outputs it to the standard output
+Job Control
+------------
+ps List all processes running on system
+kill Sends a signal to the processes specified
+kill -l List the signal names that can be sent to the processes in linux
+kill <PID> Kill process with id PID
+kills -s SIGKILL <PID> # Send SIGKILL signal to process with PID
+jobs Lists the jobs that the current shell is managing
+bg Used to put a process in the background
+fg Used to put a process in the foreground
+Ownership &permission
+ls -l (to show all files with permission)
+sudo chown -R username:group directory ( to change ownership)
+sudo chmod -R <user or group><+ or - r/w/x> folder (to change file permissions)
