@@ -1,0 +1,56 @@
+mkdir <folder name> 		# Creates a folder
+pwd 				# Gives the present Working directory
+ls 				# List all files in the current directory
+ls 				# Lists the files in the current directory
+ls -l 			# Prevides a long listing of all the files
+ls -l -h 			# Same as the above command but the file sizes will be in human readable form
+ls -F 			# Marks all the executable with a * and all the directories with a /
+ls --color 			# Shows a coloured listing of all the files
+ls -a 			# Shows all the files in the present directory including the special dot files
+cd <dirname> 		# Changes the directory to the subdirectory of the current directory
+cd .. 			# Changes the directory to the parent directory of the current directory
+cd ~ 			# Changes the directory to the home directory of the current user
+cd / 			# Changes the directory to the root directory of the current user
+cd ~<username>		# Changes the directory to the home sirectory of a different user
+cat <filename> 		# Displays the text scroll off the screen
+cat <file1> <file2> 		# Concatenates the contents of the two text files
+more <filename> 		# Displays the file one scornful at a time
+less <filename> 		# Similat but faster than the more command
+cp <file1> <file2> 		# Copies file 1 to file 2
+cp <file1> <dirname> 	# Copies file1 to Directory <dirname>
+cp -r <dirname1> <dirname2> 	# Copies dirname1 directory to directory dirname2
+mv <oldname> <newname> 	# Renames file with old name to new name
+mv <olddir> <newdir> 	# Renames directory with name olddir to newdir
+mv <filename> <dirname> 	# Moves files with name as filename to directory dirname
+clear 			# Clears the terminal screen
+locate <filename> 		# Searches for a specified filename
+passwd 			# Prompt to change the password of the current user
+whoami 			# Displays the details of the current logged in user
+which <package>		# Gives the location of symbolic link of current package
+man <commandname> 		# Finds out what a command does
+man -f <commandname> 	# One line summary of what the command does
+man -k <keyword> 		# Searches for a command with a particular keyword
+
+Basic  Directories in a typical Linux System
+
+ /bin		# User Binaries
+ /sbin	# System Binaries
+ /etc		# Configuration Files
+ /dev		# Device Files
+/proc	# Process info
+/var		# Varibale Files	
+ /tmp		# Temporary Files
+ /usr		# User programs
+ /home	# Home Directories
+/boot	# Boot Loader Files
+/lib		# System Libs
+/opt		# Optional Add ons
+/mnt		# Mount directory
+/media	# Removable devices
+/srv		# Service Data
+
+Executing a Bash Script
+
+ cd to the directory which contains the file to be executed
+ Type "chmod +x <fileName>" which provides system permissions for the file to be executed
+ Type ./filename.sh to execute the file
